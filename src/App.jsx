@@ -121,7 +121,7 @@ function App() {
   }
     
   return (
-    <div className="weatherApp" style={{ margin: "0 20px",backgroundImage:`url(${bgImg})`, backgroundSize:"cover",backgroundPosition:"center"}}>
+    <div className="weatherApp" style={{borderRadius:"15px",padding:"10px 15px", backgroundImage:`url(${bgImg})`, backgroundSize:"cover",backgroundPosition:"center"}}>
       <TopBar weatherData={weatherData} setCityName={setCityName}/>
       <WeatherCast weatherData={weatherData} />
       <HourlyInfo getHour={getHour} />
@@ -130,53 +130,3 @@ function App() {
 }
 
 export default App;
-/*
-const [weatherData, setWeatherData] = useState();
-let arr ;
-const check =async ()=> {
-  await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=30&lon=70&exclude=alert,hourly&appid=17fcdf36cc3b240a6fb56d73b52ce8fc`)
-   .then((res)=> res.json())
-   .then((res)=>{
-    console.log(res);
-   })
-}
-check()
-useEffect(() => {
-  const responseAPIData = async () => {
-    const data = await GetWeatherAPI();
-    console.log("Data", data);
-    const {
-      coord: { lat, lon },
-      main: { temp, feels_like, temp_min, temp_max, humidity },
-      name,
-      dt,
-      sys: { country, sunrise, sunset },
-      weather,
-      wind: { speed },
-    } = data;
-    const {main:details, icon} = weather[0]
-    console.log(lat, lon);
-    arr ={
-      lat,
-      lon,
-      temp,
-      feels_like,
-      temp_min,
-      temp_max,
-      humidity,
-      name,
-      dt,
-      country,
-      sunrise,
-      sunset,
-      details,
-      icon,
-      speed,
-    };
-    setWeatherData(arr)
-  };
- responseAPIData();
-
-}, []);
-weatherData && console.log(weatherData);
-*/
