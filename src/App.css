@@ -1,0 +1,8 @@
+.weatherApp{
+    background-image: url("./assets/weather-pic.jpg");
+    background-size: cover;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+    
+}

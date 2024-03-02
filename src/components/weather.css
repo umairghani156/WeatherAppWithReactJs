@@ -1,0 +1,56 @@
+/* .searchBar{
+   
+} */
+.appName{
+   
+    width: 50%;
+}
+.cityName{
+    
+    width: 50%;
+}
+.weather-search-bar{
+   text-align: center;
+}
+.input-par{
+    width: 35%;
+    margin: 1px auto;
+}
+
+.weather-info{
+    
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+   color: blue;
+   background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+   width: 100%;
+   
+}
+.footer-col{
+    background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+   width: 100%;
+   text-align: center;
+   border-radius: 10px;
+}
+.hight-info{
+
+  height: 180px;
+}
+.forecastDeg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px;
+  
+}
